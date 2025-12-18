@@ -1,0 +1,128 @@
+:root{--primary-yellow:#FFD700;--secondary-yellow:#FFC107;--dark:#000;--light:#fff;--gray:#f5f5f5;--dark-gray:#333;--transition:all .3s ease}
+body{background:var(--light);color:var(--dark)}
+.header-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.1)}
+.logo{display:flex;align-items:center}.logo-icon{color:var(--primary-yellow);font-size:1.8rem}
+.contact-info{display:flex;align-items:center}
+.phone-number{background:var(--primary-yellow);color:var(--dark);padding:8px 15px;border-radius:30px;font-weight:700;display:flex;align-items:center;transition:var(--transition)}
+.phone-number:hover{background:var(--secondary-yellow);transform:scale(1.05)}
+.phone-number i{margin-right:8px}
+.social-icons{display:flex;gap:15px;margin-left:20px}
+.social-icons a{color:var(--light);font-size:1.2rem;transition:var(--transition)}
+.social-icons a:hover{color:var(--primary-yellow)}
+nav{padding-top:15px}
+.nav-links{display:flex;list-style:none;justify-content:center}
+.nav-links li{margin:0 15px}
+.nav-links a{color:var(--light);text-decoration:none;font-weight:500;transition:var(--transition);padding:5px 0;position:relative}
+.nav-links a:hover{color:var(--primary-yellow)}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary-yellow);transition:var(--transition)}
+.nav-links a:hover::after{width:100%}
+.hero{padding:100px 0;text-align:center}
+.hero h2{font-size:3rem;margin-bottom:20px}
+.hero p{font-size:1.2rem;max-width:700px;margin:0 auto 30px}
+.cta-buttons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.btn{padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:700;transition:var(--transition);text-align:center}
+.btn-primary:hover{background:var(--secondary-yellow);transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.2)}
+.btn-secondary{background:0 0;color:var(--light);border:2px solid var(--light)}
+.btn-secondary:hover{background:var(--light);color:var(--dark);transform:translateY(-3px)}
+.services{padding:80px 0;background:var(--gray)}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:2.5rem;color:var(--dark);position:relative;display:inline-block;padding-bottom:15px}
+.section-title h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80px;height:3px;background:var(--primary-yellow)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.service-card{background:var(--light);border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:var(--transition)}
+.service-card:hover{transform:translateY(-10px);box-shadow:0 15px 30px rgba(0,0,0,.15)}
+.service-img{height:200px;background-size:cover;background-position:center}
+.service-content{padding:25px}
+.service-content h3{font-size:1.5rem;margin-bottom:15px}
+.service-content p{color:var(--dark-gray);margin-bottom:20px}
+.service-link{color:var(--primary-yellow);text-decoration:none;font-weight:700;display:flex;align-items:center}
+.service-link i{margin-left:5px;transition:var(--transition)}
+.service-link:hover i{transform:translateX(5px)}
+.testimonials{padding:80px 0;background:var(--light)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.testimonial-card{background:var(--gray);border-radius:10px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,.05);position:relative}
+.testimonial-card::before{content:'"';font-size:5rem;color:var(--primary-yellow);position:absolute;top:-10px;left:10px;opacity:.3}
+.testimonial-content{margin-bottom:20px;font-style:italic}
+.testimonial-author{display:flex;align-items:center}
+.author-avatar{width:50px;height:50px;border-radius:50%;background:var(--dark);display:flex;align-items:center;justify-content:center;color:var(--light);font-weight:700;margin-right:15px}
+.author-info h4{font-size:1.1rem;margin-bottom:5px}
+.author-info p{font-size:.9rem;color:var(--dark-gray)}
+.rating{color:var(--primary-yellow);margin-top:5px}
+.cta-section{background:var(--dark);color:var(--light);padding:80px 0;text-align:center}
+.cta-section h2{font-size:2.5rem;margin-bottom:20px;color:var(--primary-yellow)}
+.cta-section p{max-width:700px;margin:0 auto 30px;font-size:1.1rem}
+.cta-phone{font-size:2rem;font-weight:700;color:var(--primary-yellow);margin:20px 0;display:block}
+.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px}
+.footer-column h3{font-size:1.3rem;margin-bottom:20px;color:var(--primary-yellow);position:relative;padding-bottom:10px}
+.footer-column h3::after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:var(--primary-yellow)}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:10px}
+.footer-links a{color:var(--light);text-decoration:none;transition:var(--transition)}
+.footer-links a:hover{color:var(--primary-yellow);padding-left:5px}
+.footer-bottom{text-align:center;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:.9rem;color:rgba(255,255,255,.7)}
+.about-company{padding:80px 0;background:linear-gradient(135deg,#f8f9fa 0,#fff 50%,#f8f9fa 100%);position:relative;overflow:hidden}
+.about-company::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--primary-yellow),transparent)}
+.about-company-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-image{position:relative;border-radius:15px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.1)}
+.about-image img{width:100%;height:400px;object-fit:cover;display:block;transition:transform .5s ease}
+.about-image:hover img{transform:scale(1.05)}
+.image-border{position:absolute;top:20px;left:20px;right:20px;bottom:20px;border:2px solid var(--primary-yellow);border-radius:10px;pointer-events:none;opacity:.7;transition:all .3s ease}
+.about-image:hover .image-border{top:15px;left:15px;right:15px;bottom:15px;opacity:1}
+.about-text{padding:20px}
+.about-text h2{font-size:2.5rem;color:var(--dark);margin-bottom:25px;position:relative;padding-bottom:15px}
+.about-text h2::after{content:'';position:absolute;bottom:0;left:0;width:80px;height:3px;background:var(--primary-yellow)}
+.about-text p{font-size:1.1rem;line-height:1.8;color:var(--dark-gray);margin-bottom:30px;text-align:justify}
+.about-text .btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(255,215,0,.3)}
+@media(max-width:992px){
+    .about-company-content{grid-template-columns:1fr;gap:40px;text-align:center}
+    .about-text h2::after{left:50%;transform:translateX(-50%)}
+    .about-image img{height:300px}
+    .hero h2{font-size:2.5rem}
+    .section-title h2{font-size:2rem}
+}
+@media(max-width:768px){
+    .header-top{flex-direction:column;text-align:center}
+    .contact-info{margin-top:15px;flex-direction:column;gap:15px}
+    .social-icons{margin-left:0}
+    .nav-links li{margin:10px 0}
+    .hero{padding:80px 0}
+    .hero h2{font-size:2rem}
+    .cta-buttons{flex-direction:column;align-items:center}
+    .btn{width:100%;max-width:300px}
+    .about-company{padding:60px 0}
+    .about-text h2{font-size:2rem}
+    .about-text p{font-size:1rem;text-align:left}
+}
+@media(max-width:576px){
+    .hero h2{font-size:1.8rem}
+    .section-title h2{font-size:1.8rem}
+    .cta-phone{font-size:1.5rem}
+}
+.service-features{margin:15px 0}
+.service-features span{display:block;margin-bottom:8px;font-size:.9rem}
+.service-features i{color:var(--primary-yellow);margin-right:8px}
+.service-icon{font-size:2.5rem;color:var(--primary-yellow);margin-bottom:15px;text-align:center}
+.nav-links a.active{color:var(--primary-yellow)}
+.nav-links a.active::after{width:100%}
+.section-title p{max-width:800px;margin:0 auto;font-size:1.1rem;color:var(--dark-gray)}
+.trustpilot-card{background:linear-gradient(135deg,#00b67a 0,#00a870 100%);border-radius:10px;padding:30px;margin-bottom:50px;color:#fff;box-shadow:0 10px 30px rgba(0,182,122,.3)}
+.testimonials .testimonial-card{transition:transform .3s ease,box-shadow .3s ease}
+.testimonials .testimonial-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.1)}
+.trustpilot-card{background:linear-gradient(135deg,#00b67a 0,#00a870 100%);color:#fff;position:relative;overflow:hidden}
+.trustpilot-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:rgba(255,255,255,.3)}
+.trustpilot-badge{position:absolute;top:15px;right:15px;background:rgba(255,255,255,.2);padding:5px 10px;border-radius:20px;font-size:.8rem;font-weight:700;display:flex;align-items:center;gap:5px}
+.trustpilot-card .testimonial-content{margin-top:40px;margin-bottom:20px}
+.trustpilot-card .testimonial-content p{color:#fff;font-style:italic;font-size:1rem}
+.trustpilot-avatar{background:rgba(255,255,255,.2)!important;color:#fff!important}
+.trustpilot-card .author-info h4{color:#fff}
+.trustpilot-card .author-info p{color:rgba(255,255,255,.8)}
+.trustpilot-card .rating{color:#FFD700}
+.trustpilot-link{margin-top:15px;text-align:center}
+.trustpilot-link a{color:#fff;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(255,255,255,.2);border-radius:5px;transition:all .3s ease;font-size:.9rem}
+.trustpilot-link a:hover{background:rgba(255,255,255,.3);transform:translateY(-2px)}
+.testimonials .testimonial-card:hover,.trustpilot-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.15)}
+@media(max-width:768px){
+    .trustpilot-badge{position:relative;top:0;right:0;margin-bottom:15px;align-self:flex-end}
+    .trustpilot-card .testimonial-content{margin-top:0}
+    .trustpilot-link a{width:100%;justify-content:center}
+}
