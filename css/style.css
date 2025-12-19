@@ -153,7 +153,7 @@ nav {
 
 /* Hero Section - Optimized */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('images/hero-bg.webp') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../images/hero-bg.webp') center/cover no-repeat;
     color: var(--light);
     padding: 4rem 0;
     text-align: center;
@@ -534,3 +534,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
