@@ -61,12 +61,6 @@ header {
     text-decoration: none;
 }
 
-.logo h1 {
-    .fa-taxi { color: #FFD700 !important; } 
-    font-size: 1.5rem;
-    color: var(--primary-yellow);
-}
-
 .contact-info {
     display: flex;
     align-items: center;
@@ -535,5 +529,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
