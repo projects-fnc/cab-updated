@@ -60,6 +60,10 @@ header {
     gap: 0.5rem;
     text-decoration: none;
 }
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-yellow);
+}
 
 .contact-info {
     display: flex;
@@ -529,6 +533,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
