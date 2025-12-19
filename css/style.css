@@ -62,6 +62,7 @@ header {
 }
 
 .logo h1 {
+    .fa-taxi { color: #FFD700 !important; } 
     font-size: 1.5rem;
     color: var(--primary-yellow);
 }
@@ -534,4 +535,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
